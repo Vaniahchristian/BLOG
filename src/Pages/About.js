@@ -4,10 +4,11 @@ const About = () => {
     //console.log("About rendered");
   return (
     <div>
-      <h1>About the EventEats App</h1>
+      <h1>About the MAK EVENTS App</h1>
       <p>
-        The EventEats App is designed to help students attend events with the added benefit of receiving free meals. 
-        Our goal is to combat student hunger by providing opportunities for students to engage with campus events while addressing a critical need.
+        The MAK EVENTS App is designed to keep students informed and engaged with all campus events. 
+        Whether it's academic seminars, social gatherings, or special announcements, Mak Events ensures that students never miss out. 
+        Our mission is to enhance the university experience by providing a centralized platform for event discovery and participation.
       </p>
     </div>
   );

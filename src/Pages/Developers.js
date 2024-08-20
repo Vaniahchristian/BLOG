@@ -1,15 +1,29 @@
 import React from 'react';
-import DeveloperCard from '../components/DeveloperCard';
+import { Link } from 'react-router-dom';
+
+const DeveloperCard = ({ name, regNo, phone }) => {
+  return (
+    <div className="developer-card">
+      <h3>
+        <Link to={`/developers/${name}`}>
+          {name}
+        </Link>
+      </h3>
+      <p>Registration No: {regNo}</p>
+      <p>Phone: {phone}</p>
+    </div>
+  );
+};
+
+
 
 const Developers = () => {
   const developers = [
-    
     { name: 'ACAN BRENDA', regNo: '21/U/05295/EVE', phone: '0764801783' },
     { name: 'Aheebwomugisha Sasha Ana', regNo: '21/U/12223/PS', phone: '0702932328' },
     { name: 'Nalugya Merisa', regNo: '21/U/17292/PS', phone: '0703844581' },
     { name: 'MUKISA VANIAH CHRISTIAN', regNo: '21/U/13176/EVE', phone: '0754092850' },
   ];
-  //console.log("Developers rendered");
 
   return (
     <div>

@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import DeveloperPage from './components/DeveloperPage';
 
 const App = () => {
+
   const developers = [
     { name: 'ACAN BRENDA', regNo: '21/U/05295/EVE', phone: '0764801783' },
     { name: 'Aheebwomugisha Sasha Ana', regNo: '21/U/12223/PS', phone: '0702932328' },
@@ -17,7 +18,9 @@ const App = () => {
 
   return (
     <Router>
+       
       <Navbar />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
